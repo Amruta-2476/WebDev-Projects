@@ -21,7 +21,7 @@
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.7);
     --color-black: #000;
-    --color-bg: #5871d5;
+    --color-bg: #1f2641;
     --color-bg1: #2e3267;
     --color-bg2: #424890;
 
@@ -94,7 +94,7 @@ img{
     color: var(--color-white);
 }
 
-/* **** Navbar **** */
+/* ############ Navbar ############ */
 nav{
     background: transparent;
     width: 100vw;    /* 100% of the viewport width i.e no matter the what device the navbar will take 100% width of it*/
@@ -106,8 +106,8 @@ nav{
 .nav_container{
     height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;   /* aligns items on X axis */
+    align-items: center;   /* aligns items on Y axis */
 }
 nav button{  /* menu buttons only for smaller screens */
     display: none;
@@ -125,4 +125,24 @@ nav button{  /* menu buttons only for smaller screens */
     color: var(--color-bg2);
     text-decoration: underline;
 }
-/* **** End Navbar **** */
+
+/* ############ First header ############ */
+header{
+    position: relative;
+    top: 5rem;  /* height of navbar */
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+.header_container{  
+    display: grid;
+    grid-template-columns: 1fr 1fr;   /* divide into equal halves */
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+.header_left p{
+    margin: 1rem 0 1.5rem;
+}
+
+/* ############ Categories section ############ */
