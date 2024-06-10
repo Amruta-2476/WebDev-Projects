@@ -98,7 +98,7 @@ img{
 nav{
     background: transparent;
     width: 100vw;    /* 100% of the viewport width i.e no matter the what device the navbar will take 100% width of it*/
-    height: 5rem;
+    height: 4rem;
     position: fixed;
     top: 0;
     z-index: 11;
@@ -124,6 +124,11 @@ nav button{  /* menu buttons only for smaller screens */
 .nav_menu a:hover{
     color: var(--color-bg2);
     text-decoration: underline;
+}
+/* js scroll change navbar color */
+.window-scroll{
+    background: var(--primary-color);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /* ############ First header ############ */
