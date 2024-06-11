@@ -278,6 +278,49 @@ header{
 }
 
 
+/* ######################## TESTIMONIALS/REVIEWS SECTION ######################## */
+.testimonials_container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 3rem;
+}
+.testimonial{
+    padding-top: 1rem;
+}
+.testimonial_avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 0.5rem;
+    border: 0.5rem solid var(--color-bg2);
+}
+.testimonial_info{
+    text-align: center;
+}
+.testimonial_body{
+    background: var(--primary-color);
+    padding: 1.5rem; 
+    margin-top: 3rem; 
+    position: relative;
+}
+.testimonial_body::before{   /* for the triangle */
+   content: "";
+   display: block;
+   background: linear-gradient(135deg, transparent, var(--primary-color), var(--primary-color));
+   width: 3rem;
+   height: 3rem;
+   position: absolute;
+   left: 45%;
+   top: -1.5rem;
+   transform: rotate(45deg);
+}
+
+
+/* ######################## FOOTER SECTION ######################## */
+
+
+
 /* ######################## got to top button ######################## */
 #topBtn {
     display: none; /* Hidden by default */
