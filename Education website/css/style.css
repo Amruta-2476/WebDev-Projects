@@ -45,7 +45,7 @@ body{
 }
 
 section{  
-    padding: 6rem 0;
+    padding: 5rem 0;
 }
 section h2{
     text-align: center;
@@ -138,7 +138,7 @@ header{
     top: 5rem;  /* height of navbar */
     overflow: hidden;
     height: 70vh;
-    margin-bottom: 5rem;
+    margin-bottom: 6rem;
 }
 .header_container{  
     display: grid;
@@ -347,6 +347,9 @@ footer ul li a:hover{
     padding: 1rem 0;
     border-top: 1px solid var(--color-bg2);
 }
+.quicklinks, .privacy{
+    font-weight: 200;
+}
 
 
 /* ######################## got to top button ######################## */
@@ -371,8 +374,11 @@ footer ul li a:hover{
    .container{
     width: var(--container-width-md);
    }
+   section{
+    padding: 3rem 0;
+   }
    h1{
-    font-size: 2.1rem;
+    font-size: 2rem;
    }
     h2{
      font-size: 1.7rem;
@@ -382,6 +388,10 @@ footer ul li a:hover{
     }
     h4{
      font-size: 1rem;
+    }
+    .btn{
+        padding: 0.4rem 1.4rem;
+        font-weight: 400;
     }
     /* navbar */
     nav button{
@@ -427,10 +437,8 @@ footer ul li a:hover{
         100%{
             transform: rotateZ(0deg) rotateX(0deg) scale(1);
             opacity: 1;
-        }
-        
+        } 
     }
-
     .nav_menu li a{
         background: var(--primary-color);
         box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
@@ -443,4 +451,56 @@ footer ul li a:hover{
         background: var(--color-bg2);
         color: var(--color-white);
     }
+
+    /* header */
+    header{
+        height: 60vh;
+        margin-bottom: 7rem;
+    }
+    .header_container{
+        gap: 0;
+        padding-bottom: 3rem;
+    }
+    .header_left p{
+        font-size: 1rem;
+            margin: 0.5rem 0 1rem;
+    }
+
+    /* categories */
+    .categories{
+        height: auto;
+    }
+    .categories_container{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* popular courses */
+    .courses{
+        margin-top: 0;
+    }
+    .courses_container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* faqs */
+    .faqs_container{
+        grid-template-columns: 1fr;
+    }
+    .faq{
+        padding: 1rem;
+    }
+    .faq h4{
+        font-size: 1rem;
+    }
+
+    /* testimonials => looks good */
+    
+    /* footer */
+    .footer_container{
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
 }
+
+
