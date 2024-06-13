@@ -119,16 +119,32 @@ nav button{  /* menu buttons only for smaller screens */
     gap: 3rem;
 }
 .nav_menu a{
-    font-size: 0.9rem;
+    font-size: 1rem;
     transition: var(--transition);
 }
 .nav_menu a:hover{
-    color: var(--color-bg2);
+    font-weight: 800;
+    font-size: 1.1rem;
+    text-decoration: underline;
 }
 /* js scroll change navbar color */
 .window-scroll{
-    background: var(--primary-color);
-    box-shadow: 0 1rem 2rem rgb(0, 0, 0);
+    background: rgba(85, 85, 85, 0.529);
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0); 
+}
+.nav_logo{
+    width: 3.5rem;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav_text{
+    font-size: 1.3rem;
+    font-weight: 800;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: oblique;
 }
 
 
