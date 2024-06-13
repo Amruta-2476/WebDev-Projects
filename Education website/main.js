@@ -50,3 +50,24 @@ closeBtn.addEventListener('click', () => {
   closeBtn.style.display = 'none';
   menuBtn.style.display = 'inline-block';
 });
+
+
+// ***$$$ ABOUT PAGE COUNTER BOXES ***$$$
+let valueDisplays = document.querySelectorAll('.num');
+let duration = 1400; // 1.4 second
+let interval = 60; // 70 ms
+valueDisplays.forEach(valueDisplay => {
+  let endValue = parseInt(valueDisplay.getAttribute('data-val'));  //parseInt(valueDisplay
+  let startValue = 0;
+  // console.log(endValue)
+  let increment = (endValue - startValue) / (duration / interval);
+  let current = startValue;
+  let timer = setInterval(() => {
+    current += increment;
+    valueDisplay.innerText = Math.floor(current);
+    if (current >= endValue) {
+      clearInterval(timer);
+      valueDisplay.innerText = endValue;
+    }
+  }, interval);
+});
