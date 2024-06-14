@@ -71,3 +71,41 @@ valueDisplays.forEach(valueDisplay => {
     }
   }, interval);
 });
+
+
+// Function to check if an element is in the viewport
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+// Function to handle scroll reveal
+function scrollReveal() {
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+  revealElements.forEach(element => {
+    if (isElementInViewport(element)) {
+      element.classList.add('scroll-reveal-visible');
+    }
+  });
+}
+// Add event listener for scroll and initial load
+window.addEventListener('scroll', scrollReveal);
+window.addEventListener('load', scrollReveal);
+
+
+function scrollReveal2() {
+  const revealElements = document.querySelectorAll('.scroll-reveal-2');
+  revealElements.forEach(element => {
+    if (isElementInViewport(element)) {
+      element.classList.add('scroll-reveal-visible-2');
+    }
+  });
+}
+// Add event listener for scroll and initial load
+window.addEventListener('scroll', scrollReveal2);
+window.addEventListener('load', scrollReveal2);
+
